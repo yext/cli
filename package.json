@@ -1,5 +1,5 @@
 {
-  "name": "yext-cli",
+  "name": "cli",
   "version": "1.0.0",
   "description": "Command-line Interface for the Yext Platform",
   "main": "src/index.js",
