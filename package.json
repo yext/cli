@@ -1,0 +1,26 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "Command-line Interface for the Yext Platform",
+  "main": "src/index.js",
+  "author": "jwartofsky@yext.com",
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "bin": {
+    "yext": "src/cli.js"
+  },
+  "engines": {
+    "node": ">=17"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "bin-wrapper": "^4.1.0"
+  },
+  "scripts": {
+    "format": "prettier -w .",
+    "postinstall": "rimraf vendor && node src/setup/install"
+  },
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
