@@ -1,27 +1,24 @@
 {
-    "env": {
-      "browser": true,
-      "es2021": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["import"],
+  "rules": {
+    "import/extensions": ["error", "ignorePackages"]
+  },
+  "settings": {
+    "import/resolver": {
       "node": true
-    },
-    "extends": [
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      },
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-    },
-    "plugins": ["import"],
-    "rules": {
-      "import/extensions": ["error", "ignorePackages"]
-    },
-    "settings": {
-      "import/resolver": {
-        "node": true
-      }
     }
   }
-  
+}
