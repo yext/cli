@@ -18,7 +18,7 @@
   },
   "scripts": {
     "postinstall": "rimraf vendor && node src/setup/install",
-    "generate-notices": "generate-license-file --input package.json --output ./THIRD-PARTY-NOTICES --overwrite",
+    "generate-notices": "generate-license-file --input package.json --output ./THIRD-PARTY-NOTICES --overwrite && node scripts/license_append.js",
     "fmt": "prettier --write --cache .",
     "lint": "eslint --cache --fix ."
   },
