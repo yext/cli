@@ -7,7 +7,7 @@ const directory = dirname(fileURLToPath(import.meta.url));
 const dest = join(directory, "../../vendor");
 
 export default () =>
-    new BinWrapper()
+  new BinWrapper()
     .src(`${baseUrl}/mac/yext`, "darwin")
     .src(`${baseUrl}/linux/yext`, "linux", "x64")
     .src(`${baseUrl}/windows/yext`, "windows", "x64")
