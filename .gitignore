@@ -4,6 +4,8 @@ node_modules
 .npm
 .eslintcache
 
+dist
+
 # Logs
 logs
 *.log

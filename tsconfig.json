@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "isolatedModules": true,
+      "strict": true,
+      "declaration": true,
+      "emitDeclarationOnly": true,
+      "forceConsistentCasingInFileNames": true,
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "outDir": "./dist/types/",
+      "target": "ESNext",
+      "resolveJsonModule": true
+    },
+    "include": ["src", "src/cli.ts"],
+    "exclude": ["node_modules"],
+    "files": ["bin-wrapper.d.ts"]
+  }
+  
