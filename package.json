@@ -7,9 +7,9 @@
   "license": "BSD-3-Clause",
   "type": "module",
   "exports": {
-    ".": "./dist/cli.js"
+    ".": "./dist/yext.js"
   },
-  "types": "dist/cli.d.ts",
+  "types": "dist/yext.d.ts",
   "files": [
     "dist/**/*",
     "install.js",
@@ -23,7 +23,6 @@
   },
   "scripts": {
     "prepack": "pnpm build",
-    "postinstall": "node install",
     "build": "tsup",
     "generate-notices": "generate-license-file --input package.json --output ./THIRD-PARTY-NOTICES --overwrite && node scripts/license_append.js",
     "fmt": "prettier --write --cache .",
@@ -31,10 +30,15 @@
   },
   "dependencies": {
     "bin-wrapper": "^4.1.0",
+    "cli-spinner": "^0.2.10",
+    "minimist": "^1.2.8",
+    "picocolors": "^1.0.0",
     "root-package-json": "^1.1.6",
     "rimraf": "^5.0.5"
   },
   "devDependencies": {
+    "@types/cli-spinner": "^0.2.3",
+    "@types/minimist": "^1.2.5",
     "@types/node": "^20.9.1",
     "eslint": "^8.51.0",
     "eslint-plugin-import": "^2.28.1",

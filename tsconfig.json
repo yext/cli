@@ -14,7 +14,7 @@
       "target": "ESNext",
       "resolveJsonModule": true
     },
-    "include": ["src"],
+    "include": ["src", "src/cli.ts"],
     "exclude": ["node_modules"],
     "files": ["bin-wrapper.d.ts"]
   }

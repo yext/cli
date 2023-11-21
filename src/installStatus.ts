@@ -1,10 +1,11 @@
 import { spawnSync } from "node:child_process";
 import path from "node:path";
+import { config } from "./config.js";
 
 export const getCliInstallationStatus = async () => {
   try {
-    console.log(path.resolve("vendor/yext"));
-    const yextCliLogs = spawnSync(path.resolve("vendor/yext"), ["version"], {
+    const pathToExecutable = path.join(config.destination, config.binName);
+    const yextCliLogs = spawnSync(pathToExecutable, ["version"], {
       encoding: "utf-8",
     }).stdout;
     const currentVersion = extractVersion(yextCliLogs, "current");
