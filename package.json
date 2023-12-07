@@ -3,7 +3,7 @@
   "version": "1.0.0-rc.0",
   "description": "Command-line Interface for the Yext Platform",
   "main": "dist/index.js",
-  "author": "jwartofsky@yext.com",
+  "author": "sumo@yext.com",
   "license": "BSD-3-Clause",
   "type": "module",
   "exports": {

@@ -64,7 +64,7 @@ if (targetVersion.includes("alpha") && !args.tag) {
 const { yes }: { yes: boolean } = await prompts({
   type: "confirm",
   name: "yes",
-  message: `Releasing ${colors.yellow(tag)} Confirm?`,
+  message: `Releasing ${colors.yellow(tag)}. Confirm?`,
 });
 
 if (!yes) {
