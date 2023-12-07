@@ -24,7 +24,7 @@
   "scripts": {
     "prepack": "pnpm build",
     "build": "tsup",
-    "generate-notices": "generate-license-file --input package.json --output ./THIRD-PARTY-NOTICES --overwrite && node scripts/license_append.js",
+    "generate-notices": "generate-license-file",
     "fmt": "prettier --write --cache .",
     "lint": "eslint --cache --fix ."
   },
@@ -42,7 +42,7 @@
     "@types/node": "^20.9.1",
     "eslint": "^8.51.0",
     "eslint-plugin-import": "^2.28.1",
-    "generate-license-file": "^2.0.0",
+    "generate-license-file": "^3.0.0",
     "prettier": "^3.0.3",
     "tsup": "^7.2.0",
     "typescript": "^5.2.2"
