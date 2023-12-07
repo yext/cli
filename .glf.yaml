@@ -4,3 +4,6 @@ output: ./THIRD-PARTY-NOTICES
 append:
   - ./additional-third-party-content.txt
 overwrite: true
+ci: true
+replace:
+  through@2.3.8: node_modules/.pnpm/through@2.3.8/node_modules/through/LICENSE.MIT
