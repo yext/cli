@@ -57,6 +57,11 @@
     "tsx": "^4.6.2",
     "typescript": "^5.2.2"
   },
+  "pnpm": {
+    "overrides": {
+      "http-cache-semantics": "4.1.1"
+    }
+  },
   "packageManager": "pnpm@8.8.0",
   "yextCliVersion": "0.1_381"
 }
